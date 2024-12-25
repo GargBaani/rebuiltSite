@@ -130,7 +130,7 @@ body{
 /* //Flipping the image of faculty when hovered */
 .faculty {
   display: grid;
-  gap: 40rem;
+  gap: 20rem;
   margin: 5% auto;
   grid-template-columns: repeat(auto-fit, minmax(1rem, 32rem));
   justify-content: space-evenly;
@@ -192,15 +192,29 @@ body{
 }
 
 /* Media Queries for specific adjustments */
+@media (max-width: 1360px) {
+  .responsive-image {
+  max-width: 85%;
+  }
+  .faculty{
+    gap: 5rem;
+  }
+  }
 @media (max-width: 1200px) {
 .responsive-image {
 max-width: 80%;
 }
+.faculty{
+  gap: 5rem;
+}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1060px) {
 .responsive-image {
 max-width: 70%;
+}
+.faculty{
+  gap: 30rem;
 }
 }
 
@@ -208,11 +222,17 @@ max-width: 70%;
 .responsive-image {
 max-width: 60%;
 }
+.faculty{
+  gap: 30rem;
+}
 }
 
 @media (max-width: 576px) {
 .responsive-image {
 max-width: 50%;
+}
+.faculty{
+  gap: 30rem;
 }
 }
 
@@ -238,7 +258,7 @@ max-width: 40%;
 
 <!-- Heading project animation --> */
 .font-size1{
-  font-size: 980%;
+  font-size: 8rem;
 }
 .gradient-text {
   background: linear-gradient(to right, #FFA566, #FF6E06);
