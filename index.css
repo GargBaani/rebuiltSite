@@ -203,43 +203,96 @@ span.text {
   src: url(fonts/Technopath.otf);
 }
 
-.navbar {
-  width: 100vw;
-  overflow: hidden;
-  height: 7vh;
-
-}
-
-
-.navbar .navbar-nav .nav-item a {
-  padding: 30px;
-}
-
-.nav-item {
-  font-size: 130%;
-  font-family: technopath;
-  margin-right: 5%;
-}
-
-.nav-link {
-  color: white !important;
-}
-.navbar-toggler {
-  color: black !important;
-}
-.navbar-toggler-icon {
-  
-  background-color: white;
-  
-}
 
 .nav-link:hover {
   color: #d246d2 !important;
 }
 
-.navbar-brand {
+.topnav {
+  background-color: #000000;
   font-family: technopath;
+  display: flex;
+  justify-content: space-evenly;
+  overflow: hidden;
 }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a :hover{
+  color: #d246d2;
+}
+.topnav.responsive a:hover{
+  color: #d246d2;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+ a .icon{
+  position: absolute;
+  left: 0;
+  
+ }
+ .topnav {
+  justify-content: space-evenly;
+ }
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+   
+    flex-direction: column;
+    
+  }
+  .topnav.responsive a.icon {
+   
+    background-color: black;
+    display: flex;
+   
+  }
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+    font-size: 1rem;
+    padding: 8px 12px;
+
+  }
+  
+  .topnav {
+    float: none;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 body,
 html,
 #app {
