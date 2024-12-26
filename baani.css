@@ -1356,3 +1356,119 @@ li {
   display: block;
 }
 /* nav */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 335px) {
+  .events-title {
+      font-size: 1.5rem;
+      margin-left: 15vw;
+      /* text-align: left; */
+  }
+
+  .EVENT {
+      font-size: 1.8rem;
+      margin-left: 15vw;
+      font-weight: bold;
+      
+  }
+
+  .EVENT span {
+      font-size: 4rem;
+  }
+
+  .event_name{
+    text-align: left;
+  }
+  .workshops {
+      font-size: 1.5rem;
+      text-align: center;
+      
+      font-weight: bold;
+  }
+
+  .workshops span {
+      font-size: 1.5rem;
+      font-weight:lighter
+  }
+
+  .timeline {
+      flex-direction: column;
+  }
+
+  .container {
+      flex-direction: column;
+      text-align: center;
+      padding: 15px;
+  }
+
+  .imgcon {
+      width: 40px;
+      height: 40px;
+      /* margin-left: 10px; */
+      /* left: -1%; */
+      position: absolute;
+    left: .5%;
+  }
+  .right-container img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: .5%;
+  }
+  .text-box1, .text-box2, .text-box3, .text-box4, .text-box5 {
+    margin-left: auto;
+      max-width:90%;
+  }
+
+  .text-box1 h1, .text-box2 h1, .text-box3 h1, .text-box4 h1, .text-box5 h1 {
+      font-size: 1.2rem;
+  }
+
+  .content {
+      font-size: 0.8rem;
+      text-align: left;
+  }
+
+  .prefooter {
+      padding: 20px;
+      text-align: center;
+  }
+
+  .contact-us {
+      flex-direction: column;
+  }
+
+  .left {
+      margin-bottom: 20px;
+  }
+
+  .inputbox, .query-input {
+      width: 100%;
+  }
+
+  .send {
+      width: 100%;
+  }
+
+  .footer11 {
+      text-align: center;
+  }
+
+  #links1, #links2, #links3 {
+      display: block;
+      margin-bottom: 20px;
+  }
+  .container h1{
+    text-align: left;
+  }
+}
