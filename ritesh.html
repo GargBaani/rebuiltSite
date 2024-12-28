@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="ritesh.css?v=1.2">
 
 
+
 </head>
   <title>Faculty and Projects</title>
 </head>
@@ -37,54 +38,23 @@
 
 
 <body>
-    <section>
-        <div class="combine">
-          <div class="navbar">
-            <nav class="navbar navbar-expand-lg fixed-top">
-              <div class="container-fluid" style="background-color: black">
-                <!-- <a class="navbar-brand" href="#">CYBERNAUTS</a> -->
-                <button
-                  class="navbar-toggler"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav justify-content-center flex-grow-1 ps-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="baani.html">EVENTS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="vision.html">VISION</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="arvind.html">TEAM</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" href="ritesh.html">HEADS</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </section>
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="icon" onclick="myFunction()">&#9776;</a>
+
+        <a class="nav-link active" href="index.html">HOME</a>
+        <a class="nav-link active" href="baani.html">EVENTS</a>
+        <a class="nav-link active" href="vision.html">VISION</a>
+        <a class="nav-link active" href="arvind.html">TEAM</a>
+        <a class="nav-link active" href="ritesh.html">HEADS</a>
+        
+      </div>
   
 
-<section class="ritesh" style="margin-top: 10rem;">
+<section style="margin-top: 10rem;">
 <!-- First Heading (Under the Guidance of)-->
 <div class="center">
-    <div class="inline-center">
-        <p class="font-size4" style="padding-left: 2.5rem;">
+    <div>
+        <p class="font-size4" style="padding-left: 2.5rem">
             <span class="poppins-regular-italic">Under</span>
             <span style="font-family: Pristina,Regular;" class="embbeded_font">the</span>
         </p>
@@ -106,34 +76,34 @@
     <div class="flip-container responsive-container">
         <div class="flipper responsive-container">
             <div class="front">
-                <img src="pictures/HOD1.png" alt="Mr. D K Gupta" loading="lazy" class="responsive-image">
+                <img src="https://nitj.ac.in/files/1721809149148-vijay.jpg" alt="Mr. D K Gupta" loading="lazy" class="responsive-image">
                 <p class="white_text bold_text"><strong>Dr. Vijay Kumar</strong></p>
                 <p class="white_text">Head Of Department</p>
                 <p class="white_text">(Information Technology)</p>
             </div>
-            <div class="back">
-                <img src="pictures/HOD1.png" alt="Mr. D K Gupta" loading="lazy" class="responsive-image">
+            <!-- <div class="back">
+                <img src="https://nitj.ac.in/files/1721809149148-vijay.jpg" alt="Mr. D K Gupta" loading="lazy" class="responsive-image">
                 <p class="white_text"><strong>Dr. Vijay Kumar</strong></p>
                 <p class="white_text">Head Of Department</p>
                 <p class="white_text">(Information Technology)</p>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Faculty Member 2 -->
     <div class="flip-container responsive-container">
         <div class="flipper responsive-container">
             <div class="front">
-                <img src="pictures/NishaMaam.png" alt="Dr. Nisha Chaurasia" loading="lazy" class="responsive-image">
+                <img src="https://www.nitj.ac.in/images/faculty/20010919424.jpg" alt="Dr. Nisha Chaurasia" loading="lazy" class="responsive-image">
                 <p class="white_text"><strong>Dr. Nisha Chaurasia</strong> </p>
                 <p class="white_text">Faculty Coordinator</p>
                 <p class="white_text">(Information Technology)</p>
             </div>
-            <div class="back">
-                <img src="pictures/NishaMaam.png" alt="Dr. Nisha Chaurasia" loading="lazy" class="responsive-image">
+            <!-- <div class="back">
+                <img src="https://www.nitj.ac.in/images/faculty/20010919424.jpg" alt="Dr. Nisha Chaurasia" loading="lazy" class="responsive-image">
                 <p class="white_text"><strong>Dr. Nisha Chaurasia</strong></p>
                 <p class="white_text">Faculty Coordinator</p>
                 <p class="white_text">(Information Technology)</p>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -335,6 +305,16 @@
 
 
 <script src="ritesh.js"></script>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+  x.className += " responsive";
+  } else {
+  x.className = "topnav";
+  }
+  }
+  </script>
 
 </body>
 </html>
