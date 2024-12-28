@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: Poppins,sans-serif;
+
   box-sizing: border-box;
 }
 
@@ -32,29 +32,46 @@ body{
   src: url("fonts/pristina.ttf");
 }
 
+/* .evehead{
+  background: linear-gradient(120deg,rgb(175, 13, 175),rgb(254, 242, 0));
+  color:transparent;
+  background-clip: text;
 
+} */
+ .events_body{
+  font-family: Poppins,sans-serif;
+ }
+ .prefooter,.footer11{
+  font-family: Poppins,sans-serif;
+ }
 .EVENT{
   color:white;
   font-size: 5rem;
   margin-left: 25%;
-  margin-top: -10%;
-  line-height: normal;
+  margin-top: -8%;
+  font-family: Poppins,sans-serif;
+  font-weight: bold;
+  /* background: linear-gradient(180deg, rgb(241, 241, 197), white);
+  color: transparent;
+  background-clip:text; */
 
 }
 .EVENT span{
   color:rgb(249, 149, 0);
   font-size: 15rem;
-  margin-top: -4%;
+  margin-top: -8%;
   margin-left: 2%;
   font-family: pristina;
-  line-height: normal;
+  font-weight: lighter;
 }
 .workshops{
   color:rgb(244, 22, 192);
+  /* color: white; */
   font-size: 5rem;
   margin-left: 25%;
   margin-top: -4%;
-  line-height: normal;
+  font-family: Poppins,sans-serif;
+  font-weight: bold;
 
 }
 .workshops span{
@@ -65,11 +82,6 @@ body{
   font-family: pristina;
 }
 
-
-
-.events_body{
-  background-color: #000000;
-}
 .timeline{
   position: relative;
   max-width: 1200px;
@@ -112,7 +124,7 @@ body{
       transform: translateY(0);
   }
   100% {
-      transform: translateY(calc(-600%)); 
+      transform: translateY(calc(-400%)); 
   }
 }
 
@@ -142,7 +154,7 @@ body{
 }
 
 .container:nth-child(1){
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 .container:nth-child(2){
   animation-delay: 1s;
@@ -159,10 +171,6 @@ body{
 .container:nth-child(6){
   animation-delay: 1s;
 }
-.container:nth-child(7){
-  animation-delay: 1s;
-}
-
 
 
 
@@ -199,11 +207,23 @@ body{
   background-repeat: no-repeat;
   background-position: bottom;
   box-shadow: #fff;
+  /* border-top: 4px solid green; */
+  /* border-top: 4px inherit green; 
+   */
+   /* box-shadow: 0px 0px 5px rgb(146, 241, 148) inset; */
    box-shadow: 8px 8px 6px #A523B0, 13px 13px 6px green;
   }
   .evebutton {
+      /* margin-top: 112vh; */
       width: 15vw;
+      /* border: 3px solid black; */
+      /* height: 4vh; */
+      /* border-radius: 15px; */
+      /* font-size: 17px; */
       color: rgb(11, 11, 11);
+      /* align-items: center; */
+      /* text-align: center; */
+      /* justify-content: center; */
       display: flex;
       
       
@@ -216,6 +236,7 @@ body{
 
 .text-box3{
   padding: 20px 30px;
+  /* background: #fff; */
   height: 50vh;
   color: #fff;
   position: relative;
@@ -230,6 +251,7 @@ body{
 }
 .text-box4{
   padding: 20px 30px;
+  /* background: #fff; */
   height: 50vh;
   color: #fff;
   position: relative;
@@ -244,6 +266,7 @@ body{
 }
 .text-box5{
   padding: 20px 30px;
+  /* background: #fff; */
   height: 50vh;
   color: #fff;
   position: relative;
@@ -258,6 +281,7 @@ body{
 }
 .text-box6{
   padding: 20px 30px;
+  /* background: #fff; */
   height: 50vh;
   color: #fff;
   position: relative;
@@ -506,6 +530,29 @@ body{
 }
 
 }
+/* @media screen and (max-width: 400px){
+  .imgcon{
+      width: 5vw;
+      height: 5vw;
+      position: relative;
+      left: 0%;
+  }
+  .container img{
+      width: 12vw;
+      height: 12vw;
+      left: -35%;
+
+  }
+  .date{
+      width: 5vw;
+  }
+} */
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
   .timeline {
@@ -1310,123 +1357,3 @@ li {
   display: block;
 }
 /* nav */
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 335px) {
-  .events-title {
-      font-size: 1.5rem;
-      margin-left: 15vw;
-      /* text-align: left; */
-  }
-
-  .EVENT {
-      font-size: 1.8rem;
-      margin-left: 15vw;
-      font-weight: bold;
-      
-  }
-
-  .EVENT span {
-      font-size: 4rem;
-  }
-
-  .event_name{
-    text-align: left;
-  }
-  .workshops {
-      font-size: 1.5rem;
-      text-align: center;
-      
-      font-weight: bold;
-  }
-
-  .workshops span {
-      font-size: 1.5rem;
-      font-weight:lighter
-  }
-
-  .timeline {
-      flex-direction: column;
-  }
-
-  .container {
-      flex-direction: column;
-      text-align: center;
-      padding: 15px;
-      scroll-snap-align: start;         
-      animation: scroll 30s  infinite;       
-      animation-play-state: running;    
-          transition: transform 0.5s ease;  
-  }
-
-  .imgcon {
-      width: 40px;
-      height: 40px;
-      /* margin-left: 10px; */
-      /* left: -1%; */
-      position: absolute;
-    left: .5%;
-  }
-  .right-container img{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: .5%;
-  }
-  .text-box1, .text-box2, .text-box3, .text-box4, .text-box5 {
-    margin-left: auto;
-      max-width:90%;
-  }
-
-  .text-box1 h1, .text-box2 h1, .text-box3 h1, .text-box4 h1, .text-box5 h1 {
-      font-size: 1.2rem;
-  }
-
-  .content {
-      font-size: 0.8rem;
-      text-align: left;
-  }
-
-  .prefooter {
-      padding: 20px;
-      text-align: center;
-  }
-
-  .contact-us {
-      flex-direction: column;
-  }
-
-  .left {
-      margin-bottom: 20px;
-  }
-
-  .inputbox, .query-input {
-      width: 100%;
-  }
-
-  .send {
-      width: 100%;
-  }
-
-  .footer11 {
-      text-align: center;
-  }
-
-  #links1, #links2, #links3 {
-      display: block;
-      margin-bottom: 20px;
-  }
-  .container h1{
-    text-align: left;
-  }
-}

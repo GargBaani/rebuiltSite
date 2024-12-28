@@ -101,7 +101,9 @@
   
   .heads {
     user-select: none;
+    min-width: 21rem;
     max-width: 20rem;
+   
     margin: 5rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
@@ -133,8 +135,8 @@
   
   .heads .tokenImage {
     border-radius: .5rem;
-    width: 100%;
-    height: 250px;
+    min-width: 18rem;
+    max-height: 300px;
     object-fit: cover;
   }
   
@@ -159,6 +161,7 @@
     font-size: 2rem;
     text-align: center;
     color: white;
+    margin-top: 20px;
   }
   
   .tokenInfo {
@@ -252,8 +255,8 @@
     flex-direction: column;
     justify-content: center;
     font-family: technopath;
-    ;
-    line-height: 7.5rem;
+    
+    line-height: 3rem;
     padding-bottom: 8vw;
     width: 100vw;
     margin-top: 5vh;
