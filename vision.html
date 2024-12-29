@@ -84,5 +84,20 @@
     }
     }
     </script>
+
+<script>
+  
+if (!('ontouchstart' in window)) {
+
+  var pos = document.documentElement;
+  pos.addEventListener('mousemove', (e) => {
+    pos.style.setProperty('--x', e.clientX + 'px');
+    pos.style.setProperty('--y', e.clientY + 'px');
+  });
+}
+
+</script>
+
   </body>
 </html>
+
