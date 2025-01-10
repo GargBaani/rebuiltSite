@@ -87,6 +87,16 @@ body {
   align-items: center;
   justify-content: center;
 }
+.headiing-utgf{
+  display: grid;
+  gap: 0rem;
+  margin: 0%;
+  padding: 0%;
+}
+.headiing-utgf p {
+  margin: 0%;
+  padding: 0%;
+}
 
 @font-face {
   font-family: 'Pristina';
@@ -113,11 +123,9 @@ body {
   padding-right: 1rem;
 
 }
-
 .poppins-regular-italic {
   font-family: "Poppins", sans-serif;
   /* font-style: italic; */
-
 }
 
 .poppins-light-italic {
@@ -134,7 +142,7 @@ body {
 /* //Flipping the image of faculty when hovered */
 .faculty {
   display: grid;
-  gap: 20rem;
+  gap: 0rem;
   margin: 5% auto;
   grid-template-columns: repeat(auto-fit, minmax(1rem, 32rem));
   justify-content: space-evenly;
